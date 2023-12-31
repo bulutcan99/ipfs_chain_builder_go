@@ -1,0 +1,10 @@
+FROM ipfs/kubo
+
+ENV PRIVATE_PEER_ID=...
+ENV PRIVATE_PEER_IP_ADDR=...
+
+COPY ./001-test.sh /container-init.d/001-test.sh
+
+EXPOSE 4001
+EXPOSE 8080
+EXPOSE 5001
